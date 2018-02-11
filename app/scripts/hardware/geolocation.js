@@ -16,7 +16,6 @@ function logPosition(position) {
     //     log('latitude: ' + position.coords.latitude +
     //     ', longitude: ' + position.coords.longitude);
     // }
-  
 }
 
 navigator.permissions.query({name:'geolocation'}).then(function(p) {
@@ -33,21 +32,19 @@ navigator.permissions.query({name:'notifications'}).then(function(p) {
     }
 })
 
-navigator.geolocation.getCurrentPosition(initMap);
-
 function initMap(position) {
     console.log("position", position);
     if (position) {
-    var uluru = {lat: position.coords.latitude, lng: position.coords.longitude};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-}
+        var uluru = {lat: position.coords.latitude, lng: position.coords.longitude};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    }
 }
 
 //To add the google maps go to: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
