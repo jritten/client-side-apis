@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 
- #map {
-  height: 400px;
-  width: 100%;
- }
-
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -217,4 +212,9 @@ _:-ms-input-placeholder, :root .demo-graph {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
