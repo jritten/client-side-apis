@@ -1,5 +1,5 @@
 var button = document.querySelector('#push-btn');
-var input = document.querySelector('input');
+var input = document.querySelector('#push-input');
 
 var notify = function() {
   var options = {
